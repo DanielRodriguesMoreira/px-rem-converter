@@ -1,11 +1,12 @@
 {
-  "name": "px-calculator",
+  "name": "px-rem-calculator",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "build.aot": "ng build --prod --aot",
+    "package.aot": "ng build --prod --aot; zip -r dist/px-rem-calculator.zip dist/px-rem-calculator",
     "lint": "ng lint"
   },
   "author": "Daniel Moreira <drmoreira@outlook.pt>",

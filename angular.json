@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "px-calculator": {
+    "px-rem-calculator": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/px-calculator",
+            "outputPath": "dist/px-rem-calculator",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "px-calculator:build"
+            "browserTarget": "px-rem-calculatorr:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "px-calculator:build:production"
+              "browserTarget": "px-rem-calculator:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "px-calculator:build"
+            "browserTarget": "px-rem-calculator:build"
           }
         },
         "lint": {
@@ -93,23 +93,7 @@
           }
         }
       }
-    },
-    "px-calculator-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
     }
   },
-  "defaultProject": "px-calculator"
+  "defaultProject": "px-rem-calculator"
 }
