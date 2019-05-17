@@ -1,0 +1,14 @@
+@import '../variables';
+
+.ui-tabview-panels {
+  width: $size-250-px;
+}
+
+.ui-tabview.ui-tabview-top>.ui-tabview-nav li {
+  width: 100%;
+}
+
+.ui-tabview.ui-tabview-top>.ui-tabview-nav {
+  display: flex;
+  width: 252px;
+}

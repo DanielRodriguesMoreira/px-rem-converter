@@ -1,17 +1,15 @@
-
 {
   "manifest_version": 2,
-
-  "name": "px Calculator",
-  "description": "This extension ...",
+  "name": "Px to rem calculator",
+  "description": "This extension allows to convert pixels to rem and vice versa.",
   "version": "1.0",
-
   "browser_action": {
+    "default_title": "Px to rem",
+    "default_icon": "assets/icon.png",
     "default_popup": "index.html"
   },
   "permissions": [
     "activeTab"
   ],
-
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
