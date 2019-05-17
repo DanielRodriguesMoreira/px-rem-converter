@@ -4,11 +4,12 @@
   width: $size-250-px;
 }
 
-.ui-tabview.ui-tabview-top>.ui-tabview-nav li {
+.ui-tabview.ui-tabview-top > .ui-tabview-nav li {
   width: 100%;
 }
 
-.ui-tabview.ui-tabview-top>.ui-tabview-nav {
+.ui-tabview.ui-tabview-top > .ui-tabview-nav {
   display: flex;
+  text-align: center;
   width: 252px;
 }

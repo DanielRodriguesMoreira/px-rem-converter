@@ -14,13 +14,14 @@
 <ng-template #calculator let-option="option">
   <div class="d-flex position-relative">
     <div class="form-group mr-3">
-      <label for="valueTab0">{{option === 1 ? 'Px' : 'Rem'}}</label>
-      <input class="form-control" id="valueTab0" type="text" pInputText [(ngModel)]="value">
+      <label for="value">{{option === 1 ? 'Px' : 'Rem'}}</label>
+      <input class="form-control" id="value" type="text" pInputText [(ngModel)]="value">
     </div>
     <div class="form-group">
-      <label for="resultTab0">{{option === 1 ? 'Rem' : 'Px'}}</label>
-      <input class="form-control result" id="resultTab0" type="text" [readOnly]="true" [ngModel]="result" pInputText
-        ngxClipboard [cbContent]="resultWithUnit">
+      <label for="result">{{option === 1 ? 'Rem' : 'Px'}}</label>
+      <input class="form-control result" id="result" type="text" [readOnly]="true" [ngModel]="result" pInputText
+        ngxClipboard [cbContent]="resultWithUnit" [pTooltip]="'Copied!'" [tooltipEvent]="'focus'" [hideDelay]="1000"
+        [tooltipPosition]="'top'">
     </div>
     <i class="pi pi-cog configuration" (click)="showConfiguration = !showConfiguration"></i>
   </div>
