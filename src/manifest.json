@@ -3,6 +3,7 @@
   "name": "Px to rem converter",
   "description": "This extension allows to convert pixels to rem and vice versa",
   "version": "1.0",
+  "author": "Daniel Moreira <drmoreira@outlook.pt",
   "browser_action": {
     "default_title": "Px <--> rem",
     "default_icon": "assets/icon.png",
